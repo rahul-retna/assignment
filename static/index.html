@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Insurance Charge Prediction</title>
+        <link rel="stylesheet" href="/static/style/main.css">
+        <script src="/static/script/main.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form>
+            <div class="row">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Age">
+            </div>
+            <div class="row">
+                <label for="sex">Gender</label>
+                <select name="sex" id="sex">
+                    <option value="0">Female</option>
+                    <option value="1">Male</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="bmi">BMI (Body Mass Index)</label>
+                <input type="number" id="bmi" name="bmi" placeholder="bmi">
+            </div>
+            <div class="row">
+                <label for="children">Number of children</label>
+                <input type="number" id="children" name="children" placeholder="Number of children">
+            </div>
+            <div class="row">
+                <label for="smoker">Smoker</label>
+                <select name="smoker" id="smoker">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="region">Region</label>
+                <select name="region" id="region">
+                    <option value="0">North-East</option>
+                    <option value="1">North-West</option>
+                    <option value="2">South-East</option>
+                    <option value="3">South-West</option>
+                </select>
+            </div>
+            <div class="row">
+                <button class="submit" type="button">Predict</button>
+            </div>
+            <div class="row">
+                <div class="result"></div>
+                <div class="err"></div>
+            </div>
+        </form>
+    </body>
+</html>
